@@ -2,14 +2,14 @@ let app = new Vue({
     el: '#app',
     data: {
         name: 'Easy Learning',
-        message: 'I am 21 years old'
+        message: 'I am '
     },
     methods: {
         MyName(){
             return 'easy learning methods'
         },
-        MyAge(){
-            return `${this.message}`;
+        MyAge(age){
+            return `${this.message} ${age} years old`;
         }
     }
 })
