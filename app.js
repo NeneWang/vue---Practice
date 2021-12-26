@@ -6,7 +6,8 @@ let app = new Vue({
         website: 'https://evildorm.com/',
         classess1:["one","two"],
         name: 'Nelson Wang',
-        dollar: 100
+        dollar: 100,
+        pound: 2
     },
     methods: {
         MyName(){
@@ -14,6 +15,9 @@ let app = new Vue({
         },
         MyAge(age){
             return `${this.message} ${age} years old`;
+        },
+        Amount(pound){
+            this.dollar += pound
         }
     }
 })
