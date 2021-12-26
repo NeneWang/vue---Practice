@@ -16,11 +16,22 @@
         <i>{{MyName()}}</i>
         <p>{{MyAge(12)}}</p>
         <a :href="website" target="_blank" > Main Website Here</a>
-        <h3 :class="classess1" >classess</h3>
+        <p :class="classess1" >classess</p>
+        <input type="text" :value="name" >
     </div>
 
     <script src="app.js"></script>
 
 </body>
+
+<style>
+    .one{
+        color: orange,
+    }
+
+    .two{
+        font-weight: bold;
+    }
+</style>
 
 </html>
