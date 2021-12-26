@@ -5,7 +5,8 @@ let app = new Vue({
         message: 'I am ',
         website: 'https://evildorm.com/',
         classess1:["one","two"],
-        name: 'Nelson Wang'
+        name: 'Nelson Wang',
+        dollar: 100
     },
     methods: {
         MyName(){
