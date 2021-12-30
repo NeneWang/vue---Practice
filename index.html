@@ -26,9 +26,10 @@
         </div>
 
         <input type="text" @keyup="NameChange" >
+        <input type="text" v-model="name" >
 
         <div id="kazi">
-            <button @click="EventCall">Click Here</button>
+            <button @click="Message">Click Here</button>
         </div>
         <h1>{{name}}</h1>
         <i>{{MyName()}}</i>
@@ -43,6 +44,11 @@
         <br>
         <button @click="Amount(6)"> {{6}} </button>
         <button @dblclick="dollar--"> -1 </button>
+        <button @click.shift="message"> Click Me </button>
+        <button @click.alt="message"> Click Me </button>
+
+        <a href="https://github.com/" @click.prevent>Links</a>
+
     </div>
 
     <script src="app.js"></script>

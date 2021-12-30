@@ -34,6 +34,9 @@ let app = new Vue({
         },
         NameChange(e){
             console.log(e.target.value)
+        },
+        Message(){
+            console.log('easy learning')
         }
     }
 })
