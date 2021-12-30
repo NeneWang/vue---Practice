@@ -5,6 +5,7 @@ let app = new Vue({
         message: 'I am ',
         website: 'https://evildorm.com/',
         classess1: ["one", "two"],
+        names: ['Nelson', 'Lucas', 'Geronimous', 'Alucard'],
         name: 'Nelson Wang',
         dollar: 100,
         age: 11,

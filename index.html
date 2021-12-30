@@ -28,6 +28,12 @@
         <input type="text" @keyup="NameChange" >
         <input type="text" v-model="name" >
 
+        <ol>
+            <li v-for="name in names" >
+                {{name}}
+            </li>
+        </ol>
+
         <div id="kazi">
 
             <p v-if="boolvariable" >BoolVariable is true!</p>
