@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <Navbar></Navbar>
-    <AllFriends></AllFriends>
-    <OnlineFriends></OnlineFriends>
+    <AllFriends :friends="friends"></AllFriends>
+    <OnlineFriends :friends="friends" ></OnlineFriends>
   </div>
 </template>
 
@@ -13,10 +13,17 @@ import OnlineFriends from "./components/OnlineFriends";
 
 export default {
   name: "App",
+
   data() {
     return {
       title: "Wow Our Vue website is running!",
-      
+      friends: [
+        { name: "A", online: true },
+        { name: "B", online: false },
+        { name: "C", online: true },
+        { name: "D", online: false },
+        { name: "E", online: true },
+      ],
     };
   },
   components: {
