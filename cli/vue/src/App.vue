@@ -1,19 +1,24 @@
 <template>
   <div id="app">
-    <h2>{{title}}</h2>
+    <Navbar></Navbar>
+    <h2>{{ title }}</h2>
   </div>
 </template>
 
 <script>
+import Navbar from "./components/Navbar";
 
 export default {
-  name: 'App',
-  data(){
-    return{
-      title: 'Wow Our Vue website is running!'
-    }
-  }
-}
+  name: "App",
+  data() {
+    return {
+      title: "Wow Our Vue website is running!",
+    };
+  },
+  components: {
+    Navbar,
+  },
+};
 </script>
 
 <style>
