@@ -18,6 +18,9 @@ let app = new Vue({
         },
         Amount(pound){
             this.dollar += pound
+        },
+        Me(Event){
+            console.log(Event)
         }
     }
 })
