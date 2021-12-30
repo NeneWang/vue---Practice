@@ -31,6 +31,9 @@ let app = new Vue({
         over(e){
             this.log.x = e.offsetX
             this.log.y = e.offsetY
+        },
+        NameChange(e){
+            console.log(e.target.value)
         }
     }
 })
