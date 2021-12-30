@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <Navbar></Navbar>
-    <AllFriends :friends="friends"></AllFriends>
-    <OnlineFriends :friends="friends" ></OnlineFriends>
+    <AllFriends @delete="deleteFriend" :friends="friends"></AllFriends>
+    <OnlineFriends :friends="friends"></OnlineFriends>
   </div>
 </template>
 
@@ -30,6 +30,14 @@ export default {
     Navbar,
     AllFriends,
     OnlineFriends,
+  },
+  methods: {
+    deleteFriend(payload) {
+      console.log(payload);
+      this.friends = this.friends.filter(friend => {
+        return friend.name !== payload.name
+      })
+    },
   },
 };
 </script>
