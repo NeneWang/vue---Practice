@@ -11,7 +11,8 @@ let app = new Vue({
         log: {
             x: 0,
             y: 0
-        }
+        },
+        boolvariable: false
     },
     methods: {
         MyName() {
