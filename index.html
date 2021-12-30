@@ -9,12 +9,25 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 </head>
 
+<style>
+    .canvas {
+        height: 240px;
+        width: 240px;
+        background-color: orange;
+    }
+</style>
+
+
 <body>
-    <div id="kazi">
-        <button @click="Me" >Click Here</button>
-    </div>
 
     <div id="app">
+        <div class="canvas" @mousemove="over" >
+            {{log.x}} {{log.y}}
+        </div>
+
+        <div id="kazi">
+            <button @click="EventCall">Click Here</button>
+        </div>
         <h1>{{name}}</h1>
         <i>{{MyName()}}</i>
         <p>I earn {{dollar}}</p>

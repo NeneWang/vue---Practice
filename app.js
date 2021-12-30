@@ -4,23 +4,33 @@ let app = new Vue({
         name: 'Easy Learning',
         message: 'I am ',
         website: 'https://evildorm.com/',
-        classess1:["one","two"],
+        classess1: ["one", "two"],
         name: 'Nelson Wang',
         dollar: 100,
-        pound: 2
+        pound: 2,
+        log: {
+            x: 0,
+            y: 0
+        }
     },
     methods: {
-        MyName(){
+        MyName() {
             return 'easy learning methods'
         },
-        MyAge(age){
+        MyAge(age) {
             return `${this.message} ${age} years old`;
         },
-        Amount(pound){
+        Amount(pound) {
             this.dollar += pound
+            console.log('amount added');
         },
-        Me(Event){
-            console.log(Event)
+        EventCall(event) {
+            console.log('Event Clicked');
+            console.log(event)
+        },
+        over(e){
+            this.log.x = e.offsetX
+            this.log.y = e.offsetY
         }
     }
 })
