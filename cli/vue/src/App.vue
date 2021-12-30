@@ -3,6 +3,7 @@
     <Navbar></Navbar>
     <AllFriends @delete="deleteFriend" :friends="friends"></AllFriends>
     <OnlineFriends :friends="friends"></OnlineFriends>
+    <Hook></Hook>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Navbar from "./components/Navbar";
 import AllFriends from "./components/AllFriends";
 import OnlineFriends from "./components/OnlineFriends";
+import Hook from './components/Hook';
 
 export default {
   name: "App",
@@ -30,6 +32,7 @@ export default {
     Navbar,
     AllFriends,
     OnlineFriends,
+    Hook,
   },
   methods: {
     deleteFriend(payload) {
@@ -50,5 +53,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+h1{
+  color: red;
+  text-align: center;
 }
 </style>
