@@ -21,24 +21,28 @@
 <body>
 
     <div id="app">
-        <div class="canvas" @mousemove="over" >
+        <div class="canvas" @mousemove="over">
             {{log.x}} {{log.y}}
         </div>
 
-        <input type="text" @keyup="NameChange" >
-        <input type="text" v-model="name" >
+        <input type="text" @keyup="NameChange">
+        <input type="text" v-model="name">
 
         <ol>
-            <li v-for="name in names" >
+            <li v-for="name in names">
                 {{name}}
             </li>
         </ol>
 
+        <ul>
+            <li v-for="fruit in fruits">{{fruit.name}} color: {{fruit.color}}</li>
+        </ul>
+
         <div id="kazi">
 
-            <p v-if="boolvariable" >BoolVariable is true!</p>
-            <p v-if="age>=1" >Has already been born</p>
-            <p v-if="age>=20" >Kind of an old man already</p>
+            <p v-if="boolvariable">BoolVariable is true!</p>
+            <p v-if="age>=1">Has already been born</p>
+            <p v-if="age>=20">Kind of an old man already</p>
 
             <button @click="Message">Click Here</button>
         </div>

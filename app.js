@@ -14,6 +14,21 @@ let app = new Vue({
             x: 0,
             y: 0
         },
+        fruits: [{
+                name: 'Mango',
+                color: 'yellow',
+                weight: 200
+            }, {
+                name: 'Tomatoes',
+                color: 'red',
+                weight: 40
+            },
+            {
+                name: 'Apple',
+                color: 'red',
+                weight: 50
+            }
+        ],
         boolvariable: false
     },
     methods: {
